@@ -1,0 +1,53 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+        .slick-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                list-style-type: none;
+                margin: 50px 15px;
+            }
+            li.slick-active {
+                button {
+                    background-color: red;
+                    border: 1px solid black;
+                }
+            }
+            button {
+                font-size: 0;
+                width: 20px;
+                height: 20px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+        }
+    }
+    .slick-prev, .slick-next {
+        // background: url('../../img/left.png') 0 0 / 100% no-repeat;
+        // font-size: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        width: 31px;
+        height: 50px;
+        // img {
+        //     width: 31px;
+        //     height: 50px;
+        // }
+    }
+    .slick-next {
+        // background: url('../../img/rign.png') 0 0 no-repeat;
+        right: -66px;
+        left: auto;
+        
+    }
+}
+
